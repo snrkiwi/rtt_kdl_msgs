@@ -31,7 +31,6 @@ namespace rtt_roscomm {
               return;
           }
           ti->addAlias("/kdl_msgs/Rotation");
-          ti->addTypeAlias<kdl_msgs::Rotation>();
 
           // Only the .msg type is sent over ports. The msg[] (variable size) and  cmsg[] (fixed size) exist only as members of larger messages
           RTT::types::Types()->addType( new types::PrimitiveSequenceTypeInfo<std::vector<kdl_msgs::Rotation> >("/kdl_msgs/Rotation[]") );
