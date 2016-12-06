@@ -9,19 +9,5 @@
 #include <kdl_msgs/Frame.h>
 #include <kdl_typekit/typekit/Types.hpp>
 
-namespace boost
-{
-namespace serialization
-{
-
-template<class Archive, class ContainerAllocator>
-void serialize(Archive& a,  ::kdl_msgs::Frame_<ContainerAllocator>  & m, unsigned int version)
-{
-    serialize(a, static_cast< ::KDL::Frame &>(m), version);
-}
-
-} // namespace serialization
-} // namespace boost
-
 #endif // KDL_MSGS_BOOST_SERIALIZATION_FRAME_H
 
