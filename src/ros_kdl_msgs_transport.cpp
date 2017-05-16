@@ -12,7 +12,7 @@
 #include <orocos/kdl_msgs/boost/WrenchStamped.h>
 
 #include <rtt_roscomm/rtt_rostopic_ros_msg_transporter.hpp>
-#include <rtt_roscomm/rtt_rostopic.h>
+#include <rtt_roscomm/rostopic.h>
 #include <rtt/types/TransportPlugin.hpp>
 #include <rtt/types/TypekitPlugin.hpp>
 
