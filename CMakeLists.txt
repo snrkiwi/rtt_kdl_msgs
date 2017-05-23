@@ -14,6 +14,8 @@ endif()
 find_package(catkin REQUIRED COMPONENTS rtt_roscomm kdl_msgs)
 catkin_destinations()
 
+OPTION(ENABLE_CORBA "" ON)
+
 ## Build options
 # mqueue transport
 OPTION(ENABLE_MQ "Build posix message queue transport plugin for ${_package}" OFF)
