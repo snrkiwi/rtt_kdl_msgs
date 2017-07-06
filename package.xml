@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>rtt_kdl_msgs</name>
+  <version>0.0.0</version>
+  <description>
+    Wrapper typekit to register kdl_msgs types as an alternative TypeId
+    for respective kdl_typekit types.
+  </description>
+
+  <maintainer email="orocos-dev@lists.mech.kuleuven.be">Orocos Developers</maintainer>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>rtt_roscomm</depend>
+
+  <depend>kdl_msgs</depend>
+  <depend>kdl_typekit</depend>
+  <depend>rtt_std_msgs</depend>
+
+  <export>
+    <rtt_ros>
+      <plugin_depend>rtt_roscomm</plugin_depend>
+      <plugin_depend>kdl_typekit</plugin_depend>
+      <plugin_depend>rtt_std_msgs</plugin_depend>
+    </rtt_ros>
+  </export>
+
+</package>
+
+
