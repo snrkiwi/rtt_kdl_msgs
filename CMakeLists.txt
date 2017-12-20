@@ -14,7 +14,8 @@ endif()
 find_package(catkin REQUIRED COMPONENTS rtt_roscomm kdl_msgs)
 catkin_destinations()
 
-OPTION(ENABLE_CORBA "" ON)
+# do NOT build as conflicts with legacy transport in rtt_geometry/kdl_typekit
+OPTION(ENABLE_CORBA "" OFF)
 
 ## Build options
 # mqueue transport
